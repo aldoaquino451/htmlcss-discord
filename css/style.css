@@ -23,13 +23,13 @@ html {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding-bottom: 30px;
 }
 
 p {
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.5;
   /* margin-bottom: 50px; */
 }
 
@@ -63,6 +63,11 @@ a {
 
 .btn.big.black {
   background-color: black;
+  color: white;
+}
+
+.btn.big.blue {
+  background-color: #5865f2;
   color: white;
 }
 
@@ -107,7 +112,7 @@ a {
 .jumbotron {
   height: 500px;
   padding: 130px 0 50px 0;
-  background-image: url(/img/jumbo.png);
+  background-image: url(../img/jumbo.png);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -128,30 +133,49 @@ a {
 ---------------*/
 
 main section {
-  padding: 50px 0;
+  padding: 150px 0;
+  color: black;
 }
 
 main section.section-grey {
   background-color: #f6f6f6;
 }
 
-main section > * {
-  height: 300px; /**/
+section.last {
+  text-align: center;
 }
 
-main section:last-child > * {
-  height: 400px; /**/
-  background-color: lightgreen;  /**/
+.last-text {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 2.5rem;
 }
 
-.img {
-  background-color: lightskyblue;  /**/
+.last-image img {
+  width: 100%;
+}
+.last-title {
+  padding: 30px 50px;
+  margin: 0 auto;
+  background-image: url(../img/stars.svg);
+}
+.last-link{
+  padding: 50px 0 20px;
+}
+
+/* altro  */
+.image {
   width: 60%;
-}
+  display: flex;
+} 
 
 .text {
-  background-color: pink;  /**/
   width: 40%;
+}
+
+.image img{
+  justify-content: center;
+  align-items: center;
 }
 
 /*--------------
