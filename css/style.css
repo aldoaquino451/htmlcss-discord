@@ -1,0 +1,140 @@
+/* color
+  header: #404eed
+  main: #f6f6f6
+  footer: #23272a  */
+
+/*--------------
+    RESET
+---------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--------------
+    GENERAL
+---------------*/
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+/**/
+.debug {
+  border: 3px dotted brown;
+}
+
+/*--------------
+    HEADER
+---------------*/
+
+.menu {
+  background-color: aquamarine; /**/
+  padding: 20px 0;
+}
+
+.menu-content {
+  background-color: yellowgreen; /**/
+  justify-content: space-between;
+}
+
+.menu-content > * {
+  padding: 10px;
+}
+
+.download {
+  background-color: #404eed;
+  padding: 50px 0;
+}
+
+.download-content {
+  height: 250px;  /***/
+  background-color: blueviolet; /**/  
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*--------------
+    MAIN
+---------------*/
+
+main section {
+  padding: 50px 0;
+}
+
+main section.section-grey {
+  background-color: #f6f6f6;
+}
+
+main section > * {
+  height: 300px; /**/
+}
+
+main section:last-child > * {
+  height: 400px; /**/
+  background-color: lightgreen;  /**/
+}
+
+.img {
+  background-color: lightskyblue;  /**/
+  width: 60%;
+}
+
+.text {
+  background-color: pink;  /**/
+  width: 40%;
+}
+
+/*--------------
+    FOOTER
+---------------*/
+
+footer {
+  background-color: #23272a;
+  color: white;
+  padding: 30px 0;
+}
+
+.info {
+  height: 400px; /**/
+  margin-bottom: 20px;
+}
+
+.info .social {
+  background-color: lightcoral; /**/
+  flex-basis: 30%;
+}
+
+.info .info-content {
+  background-color: lightseagreen; /**/
+  flex-basis: calc(70% / 4);
+}
+
+.signin {
+  background-color: lightsalmon; /**/
+  border-top: 5px solid white;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.signin > * {
+  padding: 10px;
+}
