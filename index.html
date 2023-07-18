@@ -5,8 +5,15 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Google  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Collegamenti  -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- google fonts  -->
+
   <title>Discord</title>
 
 </head>
@@ -14,19 +21,47 @@
 <body>
 
   <header>
-    <!-- menu di navigazione  -->
-    <section class="menu">
-      <div class="menu-content container row debug">
-        <div class="logo-header debug">logo</div>
-        <div class="link debug">link link link link</div>  
-        <div class="login debug">login</div>
+
+    <!-- Menu di navigzione  -->
+    <section class="topbar">
+      <div class="topbar-content container row">
+
+        <div class="logo-header row centered">
+          <img class="logo-btn" src="img/logo.svg" alt="logo">
+        </div>
+
+        <div class="menu row centered">
+          <a class="link" href="https://www.google.com" target="_blank" title="Google">Scarica</a>
+          <a class="link" href="https://www.google.com" target="_blank" title="Google">Perché Discord</a>
+          <a class="link" href="https://www.google.com" target="_blank" title="Google">Nitro</a>
+          <a class="link" href="https://www.google.com" target="_blank" title="Google">Sicurezza</a>
+          <a class="link" href="https://www.google.com" target="_blank" title="Google">Assistenza</a>
+        </div>  
+
+        <div class="login row centered">
+          <a class="btn small" href="https://www.google.com" target="_blank" title="Google">Accedi</a>
+        </div>
+
       </div>  
     </section>
     
-    <!-- download button  -->
-    <section class="download">
-      <div class="download-content debug">download button</div>
+    <!-- Jumbotron con download button  -->
+    <section class="jumbotron">
+      <div class="jumbotron-content">
+
+        <h1>Il tuo posto per parlare</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia enim non error aperiam, id perspiciatis incidunt repudiandae suscipit magni debitis maiores tempora quod qui voluptatibus in excepturi beatae at, voluptas nobis deleniti, autem magnam soluta.</p>
+        <div class="jumbotron-button">
+          <a class="btn big" href="https://www.google.com" target="_blank" title="Google">
+            <i class="fa-solid fa-arrow-down"></i>
+            <span>Scarica per Mac</span>
+          </a>
+          <a class="btn big black" href="https://www.google.com" target="_blank" title="Google">Apri Discord nel tuo browser</a>
+        </div>
+
+      </div>
     </section>
+
   </header>
 
   <main>

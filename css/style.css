@@ -1,5 +1,5 @@
 /* color
-  header: #404eed
+  header: #255ee9
   main: #f6f6f6
   footer: #23272a  */
 
@@ -17,8 +17,25 @@
     GENERAL
 ---------------*/
 
-body {
-  font-family: 'Courier New', Courier, monospace;
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding-bottom: 30px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  /* margin-bottom: 50px; */
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .container {
@@ -27,6 +44,29 @@ body {
   margin: 0 auto;
 }
 
+/* Link Button */
+.btn {
+  background-color: white;
+  border-radius: 100px;
+  color: black;
+}
+
+.btn.small {
+  padding: 8px 10px;
+}
+
+.btn.big {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+.btn.big.black {
+  background-color: black;
+  color: white;
+}
+
+/* Flex */
 .row {
   display: flex;
 }
@@ -36,40 +76,51 @@ body {
   flex-direction: column;
 }
 
-/**/
+.centered {
+  align-items: center;
+}
+
+/* Debug*/
 .debug {
-  border: 3px dotted brown;
+  border: 2px dotted brown;
 }
 
 /*--------------
     HEADER
 ---------------*/
 
-.menu {
-  background-color: aquamarine; /**/
+/* Header topbar */
+.topbar {
   padding: 20px 0;
+  background-color: #255ee9;
 }
 
-.menu-content {
-  background-color: yellowgreen; /**/
+.topbar-content {
   justify-content: space-between;
 }
 
-.menu-content > * {
-  padding: 10px;
+.menu {
+  gap: 30px;
 }
 
-.download {
-  background-color: #404eed;
-  padding: 50px 0;
+/* Header jumbotron */
+.jumbotron {
+  height: 500px;
+  padding: 130px 0 50px 0;
+  background-image: url(/img/jumbo.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
 }
 
-.download-content {
-  height: 250px;  /***/
-  background-color: blueviolet; /**/  
+.jumbotron-content {
   width: 80%;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
+}
+
+.jumbotron-button {
+  padding: 30px 0;
 }
 
 /*--------------
@@ -109,7 +160,6 @@ main section:last-child > * {
 
 footer {
   background-color: #23272a;
-  color: white;
   padding: 30px 0;
 }
 
